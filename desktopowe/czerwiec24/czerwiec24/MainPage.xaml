@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="czerwiec24.MainPage">
+
+    <ScrollView Background="#2E8B57">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="30" VerticalOptions="Center">
+            <Button HeightRequest="70" ImageSource="obraz3.png" Background="White" Padding="1"/>
+
+            <VerticalStackLayout Margin="30,0, 30,0">
+                <Image Source="obraz.png"/>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0, 20, 0, 0" >
+                    <Label x:Name="albumDownloadCount" Text="11000102" TextColor="#61D918" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center"></Label>
+                    <Button x:Name="downloadButton" Text="Pobierz" Background="#61D918" FontAttributes="Bold" FontSize="20" Clicked="downloadButton_Clicked" ></Button>
+                </StackLayout>
+                
+            </VerticalStackLayout>
+s
+            <StackLayout HorizontalOptions="FillAndExpand" >
+                <Label x:Name="albumArtist" Text="Gorillaz" FontSize="50" TextColor="White"/>
+                <Label x:Name="albumTitle" Text="The Now Now" FontSize="30" FontAttributes="Italic" TextColor="White"/>
+                
+                <HorizontalStackLayout>
+                    <Label x:Name="albumTracksCount" Text="14 utworów" TextColor="#61D918" Margin="0,0, 30,0"></Label>
+                    <Label x:Name="albumYear" Text="2006" TextColor="#61D918"></Label>
+                </HorizontalStackLayout>
+                
+            </StackLayout>
+
+            <Button HeightRequest="70" ImageSource="obraz2.png" Background="White" Padding="1" Clicked="Button_Clicked"/>
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>

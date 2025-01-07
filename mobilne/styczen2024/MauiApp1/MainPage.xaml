@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView BackgroundColor="#90EE90">
+        <VerticalStackLayout>
+            <Label Text="Wizyta u weterynarza" FontSize="Large" Padding="10" Background="SeaGreen"/>
+            <Entry Placeholder="Imię i nazwisko właściciela..." x:Name="imieinazwisko"/>
+            <Label Text="Gatunek" />
+            <ListView x:Name="lista" ItemTapped="lista_ItemTapped"/>
+            <StackLayout  Orientation="Horizontal">
+                <Label Text="Ile ma lat? 0" x:Name="tekscik"/>
+                <Slider Maximum="20" HorizontalOptions="FillAndExpand" x:Name="suwaczek" ValueChanged="suwaczek_ValueChanged"/>
+            </StackLayout>
+            <Entry Placeholder="Cel wizyty" x:Name="cel"/>
+            <TimePicker Time="16:00" x:Name="timer"/>
+            <Button Text="OK" Background="White" TextColor="Black" Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
