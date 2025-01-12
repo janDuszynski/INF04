@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="INF._04_02_23._06_SG.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <Label Text="Właściwości czcionki" FontSize="Large" FontAttributes="Bold" BackgroundColor="#558B2F" TextColor="White"/>
+            <Label Text="Rozmiar: " x:Name="DisplaySize" />
+            <Slider Maximum="40" Minimum="0" ValueChanged="Slider_ValueChanged"/>
+            <Label Text="Dzień dobry" x:Name="TextToChange"/>
+            <Button Text=">>" BackgroundColor="#558B2F" FontAttributes="Bold" HorizontalOptions="Center" Clicked="Button_Clicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
