@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jasie\\Documents\\INF04\\desktopowe\\czerwiec23\\czerwiec23\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BB274BFC-DEC1-4EF3-B32D-0B5834DAFA71}|czerwiec23\\czerwiec23.csproj|c:\\users\\jasie\\documents\\inf04\\desktopowe\\czerwiec23\\czerwiec23\\czerwiec23\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB274BFC-DEC1-4EF3-B32D-0B5834DAFA71}|czerwiec23\\czerwiec23.csproj|solutionrelative:czerwiec23\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB274BFC-DEC1-4EF3-B32D-0B5834DAFA71}|czerwiec23\\czerwiec23.csproj|c:\\users\\jasie\\documents\\inf04\\desktopowe\\czerwiec23\\czerwiec23\\czerwiec23\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BB274BFC-DEC1-4EF3-B32D-0B5834DAFA71}|czerwiec23\\czerwiec23.csproj|solutionrelative:czerwiec23\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB274BFC-DEC1-4EF3-B32D-0B5834DAFA71}|czerwiec23\\czerwiec23.csproj|c:\\users\\jasie\\documents\\inf04\\desktopowe\\czerwiec23\\czerwiec23\\czerwiec23\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BB274BFC-DEC1-4EF3-B32D-0B5834DAFA71}|czerwiec23\\czerwiec23.csproj|solutionrelative:czerwiec23\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\jasie\\Documents\\INF04\\desktopowe\\czerwiec23\\czerwiec23\\czerwiec23\\AppShell.xaml",
+              "RelativeDocumentMoniker": "czerwiec23\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\jasie\\Documents\\INF04\\desktopowe\\czerwiec23\\czerwiec23\\czerwiec23\\AppShell.xaml",
+              "RelativeToolTip": "czerwiec23\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-12T16:17:52.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jasie\\Documents\\INF04\\desktopowe\\czerwiec23\\czerwiec23\\czerwiec23\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "czerwiec23\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\jasie\\Documents\\INF04\\desktopowe\\czerwiec23\\czerwiec23\\czerwiec23\\MainPage.xaml.cs",
+              "RelativeToolTip": "czerwiec23\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T15:36:18.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\jasie\\Documents\\INF04\\desktopowe\\czerwiec23\\czerwiec23\\czerwiec23\\MainPage.xaml",
+              "RelativeDocumentMoniker": "czerwiec23\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\jasie\\Documents\\INF04\\desktopowe\\czerwiec23\\czerwiec23\\czerwiec23\\MainPage.xaml",
+              "RelativeToolTip": "czerwiec23\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-12T15:35:46.958Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

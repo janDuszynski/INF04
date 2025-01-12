@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="czerwiec23.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <StackLayout Orientation="Horizontal" Padding="30">
+
+                <StackLayout Orientation="Vertical" WidthRequest="300" >
+                    <Frame BorderColor="LightGray" CornerRadius="5" Padding="10">
+
+                        <StackLayout>
+                            <Label Text="Rodzaj przesyłki"  />
+                            <RadioButton x:Name="PocztowkaRadio" GroupName="rodzaj" Content="Pocztówka" />
+                            <RadioButton x:Name="ListaRadio" GroupName="rodzaj" Content="List" />
+                            <RadioButton x:Name="PaczkaRadio" GroupName="rodzaj" Content="Paczka" />
+                        </StackLayout>
+                    </Frame>
+                    <Button TextColor="Black" Text="Sprawdź Cenę" Background="LightGray" Margin="0, 10, 0, 0" Clicked="Button_Clicked"/>
+
+                    <StackLayout Margin="0, 20, 0, 40" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Image Source="list.png" x:Name="Zdjecie"/>
+                        <Label Text="Cena: 1.5zł" FontAttributes="Bold" HorizontalOptions="EndAndExpand" x:Name="Price"/>
+                    </StackLayout>
+                </StackLayout>
+
+
+                <StackLayout Orientation="Vertical"  WidthRequest="400" Margin="40, 0, 40, 0" HorizontalOptions="EndAndExpand">
+                    <Frame BorderColor="LightGray" CornerRadius="5" Padding="10">
+
+                    <StackLayout>
+                        <Label Text="Ulica z numerem" />
+                        <Entry x:Name="ulica" />
+                        <Label Text="Kod pocztowy" />
+                        <Entry x:Name="Kod" WidthRequest="150" HorizontalOptions="Start" />
+                        <Label Text="Miasto" />
+                        <Entry x:Name="miasto" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+            </StackLayout>
+            <Button Text="Zatwiedź" Background="LightGray" Clicked="Button_Clicked_1" TextColor="Black" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
