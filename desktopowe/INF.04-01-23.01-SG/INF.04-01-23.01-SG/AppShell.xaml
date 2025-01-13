@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="INF._04_01_23._01_SG.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:INF._04_01_23._01_SG"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Dodaj pracownika">
+
+    <ShellContent
+        Shell.NavBarIsVisible="False"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+</Shell>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="INF._04_01_23._01_SG.MainPage">
+    
+
+    <ScrollView Background="#B0C4DE">
+        <StackLayout HorizontalOptions="Center">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <StackLayout Orientation="Vertical" Padding="30">
+                    <Border Stroke="White" Padding="20,0,20,0" HeightRequest="300">
+                        <StackLayout >
+                            <Label Text="Dane pracownika"/>
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" WidthRequest="300" Padding="0, 20, 0, 0">
+                                <Label Text="Imię" HorizontalOptions="FillAndExpand"/>
+                                <Entry WidthRequest="200" BackgroundColor="White" x:Name="imie"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="0, 20, 0, 0">
+                                <Label Text="Nazwisko" HorizontalOptions="FillAndExpand"/>
+                                <Entry WidthRequest="200" BackgroundColor="White" x:Name="nazwisko"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="0, 20, 0, 30">
+                                <Label Text="Stanowisko" HorizontalOptions="FillAndExpand"/>
+                                <Picker x:Name="MyPicker" Background="White" TextColor="Black" WidthRequest="200">
+                                </Picker>
+                            </StackLayout>
+                        </StackLayout>
+
+                    </Border>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" Padding="130, 30" WidthRequest="600">
+                    <Border Stroke="White" Padding="20,0,20,0" HeightRequest="300">
+                        <StackLayout Padding="0, 20, 0, 0">
+                            <Label Text="Generowanie hasła"/>
+                            <StackLayout Orientation="Horizontal" >
+                                <Label HorizontalOptions="FillAndExpand">Ile znaków?</Label>
+                                <Entry WidthRequest="200" BackgroundColor="White" x:Name="PasswordLength"/>
+                            </StackLayout>
+                            <HorizontalStackLayout Padding="0, 20, 0, 0">
+                                <CheckBox x:Name="SizeC"/>
+                                <Label Text="Małe i wielkie litery" VerticalTextAlignment="Center"/>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout>
+                                <CheckBox x:Name="Digits"/>
+                                <Label Text="Cyfry" VerticalTextAlignment="Center"/>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout>
+                                <CheckBox x:Name="Special"/>
+                                <Label Text="Znaki specjalne" VerticalTextAlignment="Center"/>
+                            </HorizontalStackLayout>
+                            <Button Text="Generuj hasło" Background="#4682B4" HorizontalOptions="Center" Clicked="Button_Clicked"/>
+                        </StackLayout>
+                    </Border>
+                </StackLayout>
+
+            </StackLayout>
+            <Button Text="Zatwierdź"  Background="#4682B4" Padding="30, 0, 30, 0" HorizontalOptions="Center" Clicked="Button_Clicked_1"></Button>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
