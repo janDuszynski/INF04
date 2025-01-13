@@ -1,12 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import FormSupreme from './Components/form';
+import 'bootstrap/dist/css/bootstrap.css';
 
+import Form from './components/form'
 function App() {
   return (
-    <div>
-      <FormSupreme/>
-    </div>
+   <Form/>
   );
 }
 

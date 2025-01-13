@@ -1,37 +1,34 @@
-import {useState} from 'react'
-import 'bootstrap/dist/css/bootstrap.css';
+import { useState } from "react";
 
-function FormSupreme() {
-    const [title, setTitle] = useState('')
-    const [filmtype, setFilmType] = useState('')
+function Form() {
+    const [list, useList] = useState(['', 'Komedia o wartości 1', 'Obyczajowy o wartości 2', 'Sensacyjny o wartości 3', 'Horror o wartości 4']);
+    const [title, setTitle] = useState('');
+    const [genere, setGenere] = useState('');
 
-    const handleSumbit = (e) => {
-        e.preventDefault()
-        console.log(`title: ${title}, rodzaj: ${filmtype}`)
+    const handleChange = (e) => {
+        e.preventDefault();
+        console.log(`tytul: ${title}; rodzaj: ${genere}`)
     }
+    
   return (
-    <>
-        <form onSubmit={handleSumbit} className="form-group">
-            <label htmlFor="title">
-                Tytuł filmu<br/>
-                <input type="text" name="title" className="form-control" value={title}
-                       onChange={(e) => setTitle(e.target.value)}/>
-            </label><br/>
-            <label htmlFor="filmtype">
-                Rodzaj<br/>
-                <select name="filmType" className="form-control" value={filmtype}
-                        onChange={(e) => setFilmType(e.target.value)}>
-                    <option value={null}></option>
-                    <option value="1">Komedia</option>
-                    <option value="2">Obyczajowy</option>
-                    <option value="3">Sensacyjny</option>
-                    <option value="4">Horror</option>
-                </select>
-            </label><br/><br/>
+
+    <form onSubmit={handleChange}>
+        <div className="form-group">
+            <label>Tytuł filmu</label>
+            <input type="text" className="form-control" onChange={(e) => setTitle(e.target.value)}/> <br/>
+
+            <label>Rodzaj</label>
+            <select className="form-control" value={genere} onChange={(e) => setGenere(e.target.value)} >
+            {list.map((value, index) => (
+                <option key={index} value={value}>
+                {value}
+                </option>
+            ))}
+            </select>
             <button type="submit" className="btn btn-success">Dodaj</button>
-        </form>
-    </>
+        </div>
+    </form>
   );
 }
 
-export default FormSupreme;
+export default Form;
