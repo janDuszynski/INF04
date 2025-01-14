@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zima23.MainPage">
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical" >
+            <StackLayout Orientation="Horizontal">
+                <Entry HorizontalOptions="FillAndExpand"  Placeholder="Wprowadź tekst" x:Name="EntryField"/>
+                <Button Text="Dodaj" Background="Crimson" TextColor="White" Padding="35, 20" Clicked="Button_Clicked" />
+            </StackLayout>
+            <ListView SeparatorColor="Crimson" SeparatorVisibility="Default" x:Name="ItemsList"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
