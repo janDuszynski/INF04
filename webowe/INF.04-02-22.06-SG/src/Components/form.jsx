@@ -1,46 +1,44 @@
-import {useState} from 'react'
-import 'bootstrap/dist/css/bootstrap.css'
+import { useState } from 'react'
 
-function OnlyOneComponent() {
-    const courses = ["Programowanie w C#", "Angular dla początkujących", "Kurs Django"]
 
-    const [name, setName] = useState('')
-    const [course, setCourse] = useState('')
+const Form = () => {
+    const [courses, setCourses] = useState(['Programowanie w C#', 'Angular dla początkujących', 'Kurs Django'])
+    const [userData, setUserData] = useState('')
+    const [courseNumber, setCourseNumber] = useState('')
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(`${name}`)
-        if (course < 1 || course > courses.length)
-        {
-            console.log("Nieprawidłowy numer kursu")
-        }
-        else
-        {
-            console.log(`${courses[course-1]}`)
-        }
+        console.log(userData)
+        console.log(courseNumber)
     }
+    const handleCourseChange = (e) => {
+        let value = parseInt(e.target.value)
+        if (value > 0 && value <= courses.length){
+            setCourseNumber(courses[value - 1])
+        }
+        else{
+            setCourseNumber(" Nieprawidłowy numer kursu")
+        }
 
+
+    }
     return (
         <>
             <h2>Liczba kursów: {courses.length}</h2>
             <ol>
-                {courses.map((course, index) => (
-                    <li key={index}>{course}</li>
-                ))}
+                {courses.map((course, i) => (<li key={i}>{course}</li>))}
             </ol>
-            <form className="form-group" onSubmit={handleSubmit}>
-                <label htmlFor="name">
-                    Imię i nazwisko:<br/>
-                    <input type="text" name="name" className="form-control" value={name} onChange={(e) => {setName(e.target.value)}}/>
-                </label><br/>
-                <label htmlFor="course">
-                    Numer kursu:<br/>
-                    <input type="number" name="course" className="form-control" value={course} onChange={(e) => {setCourse(e.target.value)}}/>
-                </label><br/>
-                <button type="submit" className="btn btn-success">Zapisz do kursu</button>
+
+            <form className="form-group" onSubmit = {(e) => handleSubmit(e)}>
+                <label htmlFor="userData">Imię i nazwisko</label><br/>
+                <input type="text" id="userData" className="form-control" onChange={e => {setUserData(e.target.value)}}/><br/>
+                <label htmlFor="courseNumber">Numer kursu</label><br/>
+                <input type="text" id="courseNumber" className="form-control" onChange={e => {handleCourseChange(e)} }/> <br/>
+                <button type="submit" className="btn btn-success">Zapisz się do kursu</button>
             </form>
         </>
-    );
+    )
 }
 
-export default OnlyOneComponent;
+export default Form
