@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="inf04.MainPage">
+
+    <ScrollView Background="#5F9EA0">
+        <StackLayout Orientation="Horizontal" Padding="60">
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Label Text="Numer" HorizontalOptions="FillAndExpand"/>
+                    <Entry WidthRequest="350" Background="#F0FFFF" Unfocused="Entry_Unfocused" x:Name="EntryNumber" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0, 10, 0, 0">
+                    <Label Text="Imię" HorizontalOptions="FillAndExpand"/>
+                    <Entry WidthRequest="350" Background="#F0FFFF" x:Name="Imie" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0, 10, 0, 30">
+                    <Label Text="Naziwsko" HorizontalOptions="FillAndExpand"/>
+                    <Entry WidthRequest="350" Background="#F0FFFF" x:Name="Naziwsko"/>
+                </StackLayout>
+
+
+                <Border Stroke="White" StrokeThickness="2">
+                    <VerticalStackLayout>
+                        <Label Margin="0,0,0,10" Text="Kolor oczu" Padding="5"/>
+                        <RadioButton GroupName="kolor" x:Name="Niebieskie" Content="niebieskie" />
+                        <RadioButton GroupName="kolor" x:Name="Zielone" Content="zielone" />
+                        <RadioButton GroupName="kolor" x:Name="Piwne" Content="piwne" />
+                    </VerticalStackLayout>
+                </Border>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand" Margin="50, 0" VerticalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image Source="azdjecie.jpg" HeightRequest="250" Margin="0, 0, 60,0 " x:Name="UserPhoto"/>
+                    <Image Source="aodcisk.jpg" HeightRequest="250" x:Name="UserFingerPrint"/>
+                </StackLayout>
+                <Button Clicked="Button_Clicked" Text="OK" VerticalOptions="EndAndExpand" Background="#F0FFFF" TextColor="Black" HorizontalOptions="Center" Padding="100, 10"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
