@@ -30,6 +30,11 @@ Aplikacje webowe (backend) - Express.js<br>
 | Styczeń 2026 | [INF.04-01-26.01-SG](2026-01-styczen/INF.04-01-26.01-SG) | [konsola](2026-01-styczen/INF.04-01-26.01-SG/konsola) | [mobilna](2026-01-styczen/INF.04-01-26.01-SG/mobilna) |
 | Czerwiec 2026 | [INF.04-01-26.06-SG](2026-06-czerwiec/INF.04-01-26.06-SG) | [konsola](2026-06-czerwiec/INF.04-01-26.06-SG/konsola) | [webowa](2026-06-czerwiec/INF.04-01-26.06-SG/webowa) |
 
-## Inne
+## Algorytmy
 
-- [Algorytmy](algorytmy) - merge sort, quick sort, szyfr Cezara
+- **Sortowanie:** [bąbelkowe](algorytmy/sortowanie_babelkowe.py) · [przez wybieranie](algorytmy/sortowanie_przez_wybieranie.py) · [przez wstawianie](algorytmy/sortowanie_przez_wstawianie.py) · [przez zliczanie](algorytmy/sortowanie_przez_zliczanie.py) · [przez scalanie](algorytmy/merge_sort.py) · [szybkie](algorytmy/quick_sort.py)
+- **Wyszukiwanie:** [liniowe i z wartownikiem](algorytmy/wyszukiwanie_liniowe.py) · [binarne](algorytmy/wyszukiwanie_binarne.py) · [min i max](algorytmy/min_max.py)
+- **Liczby:** [NWD i NWW](algorytmy/nwd_nww.py) · [liczby pierwsze i sito Eratostenesa](algorytmy/liczby_pierwsze.py) · [silnia](algorytmy/silnia.py) · [Fibonacci](algorytmy/fibonacci.py) · [szybkie potęgowanie](algorytmy/szybkie_potegowanie.py) · [systemy liczbowe](algorytmy/systemy_liczbowe.py) · [wieże Hanoi](algorytmy/wieze_hanoi.py)
+- **Teksty i szyfry:** [szyfr Cezara](algorytmy/szyfr_cezara.py) · [szyfr Vigenère'a](algorytmy/szyfr_vigenere.py) · [palindrom](algorytmy/palindrom.py) · [anagram](algorytmy/anagram.py) · [zliczanie znaków](algorytmy/zliczanie_znakow.py)
+- **Struktury danych:** [stos](algorytmy/stos.py) · [kolejka](algorytmy/kolejka.py) · [lista jednokierunkowa](algorytmy/lista_jednokierunkowa.py) · [tablica dwuwymiarowa](algorytmy/tablica_dwuwymiarowa.py)
+- **Inne:** [wydawanie reszty (zachłanny)](algorytmy/wydawanie_reszty.py) · [losowanie bez powtórzeń](algorytmy/losowanie_bez_powtorzen.py)
