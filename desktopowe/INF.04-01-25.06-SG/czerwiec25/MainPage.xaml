@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="czerwiec25.MainPage"
+             Title="Wzornik kolorów RGB. Wykonał 00000000000"
+             BackgroundColor="#FFF8DC">
+
+    <Grid Padding="20" RowSpacing="10" RowDefinitions="100, Auto, 50, 50, 50, 40, 40" ColumnDefinitions="30, *, 40">
+        <BoxView x:Name="bigRectangle" Grid.Row="0" Grid.ColumnSpan="3" Color="White" />
+
+        <Label Grid.Row="1" Grid.ColumnSpan="3" Text="Dobierz kolor suwakami i zapisz przyciskiem:" VerticalOptions="End" TextColor="Black" />
+
+        <Label Grid.Row="2" Grid.Column="0" Text="R" VerticalOptions="Center" TextColor="Black" />
+        <Slider x:Name="sliderR" Grid.Row="2" Grid.Column="1" Minimum="0" Maximum="255" Value="255" VerticalOptions="Center" ValueChanged="Slider_ValueChanged" />
+        <Label x:Name="labelR" Grid.Row="2" Grid.Column="2" Text="255" VerticalOptions="Center" TextColor="Black" />
+
+        <Label Grid.Row="3" Grid.Column="0" Text="G" VerticalOptions="Center" TextColor="Black" />
+        <Slider x:Name="sliderG" Grid.Row="3" Grid.Column="1" Minimum="0" Maximum="255" Value="255" VerticalOptions="Center" ValueChanged="Slider_ValueChanged" />
+        <Label x:Name="labelG" Grid.Row="3" Grid.Column="2" Text="255" VerticalOptions="Center" TextColor="Black" />
+
+        <Label Grid.Row="4" Grid.Column="0" Text="B" VerticalOptions="Center" TextColor="Black" />
+        <Slider x:Name="sliderB" Grid.Row="4" Grid.Column="1" Minimum="0" Maximum="255" Value="255" VerticalOptions="Center" ValueChanged="Slider_ValueChanged" />
+        <Label x:Name="labelB" Grid.Row="4" Grid.Column="2" Text="255" VerticalOptions="Center" TextColor="Black" />
+
+        <Button Grid.Row="5" Grid.Column="1" Text="Pobierz" BackgroundColor="#CD853F" TextColor="Black" WidthRequest="200" HorizontalOptions="Center" Clicked="Button_Clicked" />
+
+        <Label x:Name="smallRectangle" Grid.Row="6" Grid.Column="1" Text="255, 255, 255" BackgroundColor="White" TextColor="Black" WidthRequest="200" HorizontalOptions="Center" VerticalTextAlignment="Center" />
+    </Grid>
+
+</ContentPage>
