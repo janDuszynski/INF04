@@ -1,2 +1,0 @@
-npm i web-vitals --save-dev
-npm i bootstrap

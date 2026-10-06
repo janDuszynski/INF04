@@ -33,4 +33,3 @@ Aplikacje webowe (backend) - Express.js<br>
 ## Inne
 
 - [Algorytmy](algorytmy) - merge sort, quick sort, szyfr Cezara
-- [Pozostałe projekty](inne)
