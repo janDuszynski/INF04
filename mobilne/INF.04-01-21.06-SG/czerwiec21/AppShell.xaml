@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="czerwiec21.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:czerwiec21"
+    Shell.FlyoutBehavior="Disabled"
+    Title="czerwiec21">
+
+    <ShellContent
+        Title="Home"
+        Shell.BackgroundColor="#6200ED"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+</Shell>
