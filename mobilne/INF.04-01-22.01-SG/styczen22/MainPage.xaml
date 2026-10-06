@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="styczen22.MainPage">
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Rejestruj konto" BackgroundColor="#008080" TextColor="White" FontSize="Large" Padding="5"/>
+            <Label Text="Podaj e-mail:" TextColor="Black" Margin="5, 10, 5, 0"/>
+            <Entry x:Name="email_entry" Placeholder="email" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+            <Label Text="Podaj hasło:" TextColor="Black" Margin="5, 10, 5, 0"/>
+            <Entry x:Name="password_entry" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+            <Label Text="Powtórz hasło:" TextColor="Black" Margin="5, 10, 5, 0"/>
+            <Entry x:Name="repeat_password_entry" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+            <Button Text="ZATWIERDŹ" HorizontalOptions="Center" Margin="0, 20, 0, 10" Clicked="Button_Clicked"/>
+            <Label x:Name="message_label" Text="Autor 00000000000" TextColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
