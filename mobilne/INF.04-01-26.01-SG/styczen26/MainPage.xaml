@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="styczen26.MainPage"
+             BackgroundColor="#ED27C121">
+
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Image x:Name="Kosc1Image" Source="kosc0.png" WidthRequest="80" HeightRequest="80" Margin="10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="KoscImage_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="Kosc2Image" Source="kosc0.png" WidthRequest="80" HeightRequest="80" Margin="10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="KoscImage_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Image x:Name="Kosc3Image" Source="kosc0.png" WidthRequest="80" HeightRequest="80" Margin="10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="KoscImage_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="Kosc4Image" Source="kosc0.png" WidthRequest="80" HeightRequest="80" Margin="10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="KoscImage_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="Kosc5Image" Source="kosc0.png" WidthRequest="80" HeightRequest="80" Margin="10">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="KoscImage_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+        </HorizontalStackLayout>
+
+        <Button Text="RZUT" BackgroundColor="#ED275021" TextColor="White" HorizontalOptions="Center" Margin="10" Clicked="RzutButton_Clicked" />
+        <Label x:Name="WynikLabel" Text="0" FontSize="40" HorizontalOptions="Center" />
+    </VerticalStackLayout>
+
+</ContentPage>
